@@ -1,4 +1,4 @@
-﻿#include "Header.h"
+#include "Header.h"
 
 int main()
 {
@@ -6,14 +6,12 @@ int main()
     SetConsoleOutputCP(1251);
     string line, prim_file, final_file;
 
-    cout << "Введите название файла, если он в директории программы, иначе введите путь к файлу: ";
     getstr(prim_file, line);
 
     changestr(line);
-    cout << "Изменённая строка: " << endl << line << endl << endl;
+    cout << endl << "Изменённая строка: " << endl << line << endl << endl;
 
-    cout << "Введите название или путь к файлу, в котором хотите сохранить результат: ";
-    savestr(line,final_file);
+    savestr(final_file, line);
 
     cout << "End of program" << endl;
     system("pause");
